@@ -1,18 +1,17 @@
 const movies = require("./movies.json");
-const http = require("http");
 const PORT = process.env.PORT || 5000;
 
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.write("ggg");
-    res.end();
-  }
+var express = require("express");
+var cors = require("cors");
+var app = express();
 
-  if (req.url === "/movies") {
-    res.write(JSON.stringify(movies));
-    res.end();
-  }
+app.use(cors());
+
+app.get("/movies", function(req, res, next) {
+  res.write(JSON.stringify(movies));
+  res.end();
 });
-server.listen(PORT);
 
-console.log("Listening on port 3001");
+app.listen(PORT, function() {
+  console.log("CORS-enabled web server listening on port 5000");
+});
