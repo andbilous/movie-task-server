@@ -17,13 +17,13 @@
     "Title": "Cool Hand Luke",
     "Release Year": "1967",
     "Format": "VHS",
-    "Stars": ["Paul Newman ", "George Kennedy ", "Strother Martin "]
+    "Stars": ["Paul Newman", "George Kennedy", "Strother Martin "]
   },
   {
     "id": 4,
     "Title": "Butch Cassidy and the Sundance Kid",
     "Release Year": "1969",
     "Format": "VHS",
-    "Stars": ["Paul Newman ", "Robert Redford ", "Katherine Ross "]
+    "Stars": ["Paul Newman", "Robert Redford", "Katherine Ross"]
   }
 ]
